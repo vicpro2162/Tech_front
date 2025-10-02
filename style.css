@@ -1,0 +1,281 @@
+body{
+    
+    opacity: 1px;
+    margin-left:300px;
+    font-family:"century gothic",'Times New Roman', Times, serif;
+}
+.entete{
+    z-index: 8;
+    background-color: #FFF;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.entete{
+    display: flex;
+    margin-bottom: 100px;
+    position: fixed;
+    z-index: 9;
+}
+
+
+.menu{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left:20px;
+    font-size: 18px;
+    width: 1280px;
+    height: 53px;
+    opacity: 1px;
+    top: 0;
+}
+.menu a{
+    text-decoration: none;
+    padding: 10px;
+    
+}
+.menu :hover{
+    background-image: url("assets/header/focused.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:100%;
+
+}
+.entete .logo{
+    width: 50%;
+    
+}
+
+.services{
+    width: 1280px;
+    height: 76px;
+    top: 636px;
+    left: 2px;
+    opacity: 1;
+
+}
+.services,
+.programme,
+.formateurs,
+.technologies,
+.contact{
+    margin-left: 20px;
+    color: black;
+}
+
+.banner-text-title{
+    color: #3E82E8;
+    text-transform: uppercase;
+}
+
+.bc{
+    height: 234.31px;
+    width:502px;
+    margin: 0;
+    padding: 0;
+}
+
+.banner-text-content{
+    margin: 0;
+    padding: 0;
+    width: 494px;
+    height: 315.15px;
+    transform:translateY(50px);
+    left: 146px;
+    opacity: 1;
+}
+
+h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+
+.banner-button{
+    border-radius: 20px;
+    border: 5px solid #3E82E8;
+    margin-right: 10px;
+    padding: 10px;
+    color: white;
+    background-color: #3E82E8;
+    box-shadow: 0 4px 20px #3E82E8;
+}
+
+.prog{
+    border-radius: 20px;
+    border: 1px solid black;
+    margin-right: 10px;
+    padding: 10px;
+    color: black;
+}
+.arrow{
+    width: 20px;
+    margin-left: 10px;
+}
+
+.banner-footer-text-contents{
+    display: flex;
+    width: 1280px;
+    height: 76px;
+    transform: translateY(-100px);
+}
+
+.persona{
+    z-index:1 ;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    margin-top: -400px;
+    width: 702px;
+    height: 636px;
+    left: 578px;
+    opacity: 1;
+
+}
+
+.back{
+    margin: 0;
+    padding: 0;
+    z-index:0;
+    position: relative;
+    filter: blur(80px);
+    width: 685.59px;
+    height: 438.99px;
+    left: 594.54px;
+    opacity: 1;
+    transform: translateY(-300px);
+
+}
+
+
+
+.services-banner{
+    position: relative;
+    width: 1280px;
+    height: 636px;
+    top: 53px;
+}
+
+
+header{
+    margin-bottom: 10px;
+}
+
+.banner-footer-text-contents p{
+    transform: translateX(100px);
+    margin-right: 100px;
+    color: #848484;
+;
+}
+
+
+hr{
+    opacity: 0.5;
+    margin-bottom: 200px;
+}
+.i1,
+.i2,
+.i3 {
+    align-items: center;
+    margin-bottom: 40px;
+    display: flex;
+    margin-left: 100px;
+}
+
+.ig1,
+.ig2,
+.ig3 {
+    width: 200px;
+}
+
+
+ul {
+    margin: 0;
+}
+
+li {
+    margin: 5px 0;
+    opacity: 0.5;
+
+}
+
+.pg2 {
+    margin: 100px ;
+}
+
+.banner-text-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin:0;
+    padding: 0;
+}
+
+.banner-text-description{
+
+    margin-bottom: 30px;
+}
+
+.services{
+    background-size: cover;
+    background-position: center;
+    width: 70px;
+    height: 30px;
+}
+
+.texte{
+    display:flex;
+}
+
+.nb{
+    font-size:50px;
+    color:grey
+}
+.logo img{
+    width: 200px;
+}
+
+.s2{
+    width: 1280px;
+    height: 1173px;
+    top: 712px;
+}
+
+.plus{
+    border-radius: 15px;
+    border: 1px solid #3E82E8;
+    background-color:#3E82E8;
+    color: white;
+    padding: 10px;
+    width: 213px;
+    height: 49px;
+    top: 1103px;
+    margin-left: 914px;
+}
+
+.contact{
+    
+    background-color: #89B0EB;
+    border: 5px solid #89B0EB;
+    border-radius: 25px;
+    right: 5px;
+    color: #FFF;
+
+}
+
+
+.contact a{
+    position: relative;
+    padding-right: 5px;
+}
+
+
+.form img{
+    position: relative;
+    width: 100%;
+    top: -250px;
+    left: -10px;
+}
