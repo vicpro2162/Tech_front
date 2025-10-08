@@ -273,9 +273,28 @@ li {
 }
 
 
-.form img{
+
+
+.form{
+    
+    display: flex;
     position: relative;
-    width: 100%;
-    top: -250px;
-    left: -10px;
+}
+
+.form img{
+    width: 30em;
+}
+
+.form2{
+    z-index: 1;
+}
+
+.form1, .form3{
+    z-index: 0;
+}
+.form1{
+    transform: translateX(100px);
+}
+.form3{
+    transform: translateX(-100px);
 }
