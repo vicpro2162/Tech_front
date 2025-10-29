@@ -168,7 +168,7 @@ header{
     transform: translateX(100px);
     margin-right: 100px;
     color: #848484;
-;
+
 }
 
 
@@ -178,7 +178,10 @@ hr{
 }
 .i1,
 .i2,
-.i3 {
+.i3,
+.i4,
+.i5,
+.i6{
     align-items: center;
     margin-bottom: 40px;
     display: flex;
