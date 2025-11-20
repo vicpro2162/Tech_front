@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bourse Tech</title>
+  <style>
+    /* ==== GLOBAL ==== */
+    body {
+      width: 100%;
+      margin: 0;
+      font-family: "Century Gothic", 'Times New Roman', Times, serif;
+      background-color: #fdfdfd;
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Centre horizontalement tout le contenu */
+    }
+
+    ul {
+      font-family: Nunito;
+      font-weight: 200;
+      font-style: ExtraLight;
+      font-size: 20px;
+      line-height: 26px;
+      color: #848484;
+      padding: 0;
+    }
+
+    h2 {
+      color: #222;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .container {
+      max-width: 1280px;
+      width: 100%;
+      margin: 0 auto; /* Centre horizontalement */
+      padding: 0 40px;
+      box-sizing: border-box;
+    }
+
+  body {
+    font-family: "Century Gothic", sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #222;
+  }
+
+header.entete {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    padding: 10px 40px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    align-items: center;
+    justify-content: center; /* centre tout le contenu */
+    gap: 130px; /* espace entre logo et menu */
+}
+
+.logo img {
+    width: 130px;
+    margin-right: 0; /* plus de marge négative, juste l'espace du gap */
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 40px; /* espace entre les liens */
+}
+
+  .menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+  .menu a:hover {
+    background-image: url("focused.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+.menu a.contact {
+    background-color: #9fc6f3; /* bleu */
+    color: #fff;               /* texte blanc */
+    padding: 5px 12px;         /* un peu d’espace autour du texte */
+    border-radius: 20px;        /* coins arrondis */
+    transition: background 0.3s ease;
+}
+
+.menu a.contact:hover {
+    background-color: #7199c4; /* bleu un peu plus foncé au survol */
+    color: #fff;
+}
+ .banner-text-title{
+    color: #3E82E8;
+    text-transform: uppercase;
+}
+
+.bc{
+    height: 234.31px;
+    width:502px;
+    margin: 0;
+    padding: 0;
+}
+
+.banner-text-content{
+    margin-left: 140px;
+    padding: 0;
+    width: 494px;
+    height: 315.15px;
+    transform:translateY(50px);
+    left: 146px;
+    opacity: 1;
+  
+}
+
+h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+
+.banner-button{
+    border-radius: 20px;
+    border: 5px solid #3E82E8;
+    margin-right: 10px;
+    padding: 10px;
+    color: white;
+    background-color: #3E82E8;
+    box-shadow: 0 4px 20px #3E82E8;
+}
+
+.prog{
+    border-radius: 20px;
+    border: 1px solid black;
+    margin-right: 10px;
+    padding: 10px;
+    color: black;
+}
+.arrow{
+    width: 20px;
+    margin-left: 10px;
+}
+
+.banner-footer-text-contents {
+    display: flex;
+    gap: 130px; /* espace horizontal */
+}
+
+.persona{
+    z-index:1 ;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    margin-top: -400px;
+    width: 702px;
+    height: 636px;
+    left: 578px;
+    opacity: 1;
+
+}
+
+.back{
+    margin: 0;
+    padding: 0;
+    z-index:0;
+    position: relative;
+    filter: blur(80px);
+    width: 685.59px;
+    height: 438.99px;
+    left: 594.54px;
+    opacity: 1;
+    transform: translateY(-300px);
+
+}
+
+
+
+.services-banner{
+    position: relative;
+    width: 1280px;
+    height: 636px;
+    top: 83px;
+}
+
+
+header{
+    margin-bottom: 10px;
+}
+
+.banner-footer-text-contents p{
+    transform: translateX(100px);
+    margin-right: 100px;
+    color: #848484;
+    width: 1280;
+height: 76;
+top: 6px;
+left: 2px;
+opacity: 1;
+gap: 500PX
+;
+}
+
+
+hr{
+    opacity: 0.5;
+    margin-bottom: 200px;
+}
+.i1, .i2, .i3 {
+    display: flex;
+    gap: 30px;    /* espace horizontal entre numéro, image et texte */
+    align-items: flex-start;
+    margin-bottom: 50px;  /* espace vertical entre les programmes */
+}
+
+
+.ig1,
+.ig2,
+.ig3 {
+    width: 200px;
+}
+
+
+ul {
+    margin: 0;
+}
+
+li {
+    margin: 5px 0;
+    opacity: 0.5;
+
+}
+
+.pg2 {
+    margin-left: 100px ;
+}
+.s2 {
+    margin-left: 280px;
+}
+
+.banner-text-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin:0;
+    padding: 0;
+}
+
+.banner-text-description{
+
+    margin-bottom: 30px;
+}
+
+.services{
+    background-size: cover;
+    background-position: center;
+    width: 70px;
+    height: 30px;
+}
+
+.texte{
+    display:flex;
+}
+
+.nb{
+    font-size:50px;
+    color:grey
+}
+.logo img{
+    width: 200px;
+}
+
+.s2{
+    width: 1280px;
+    height: 1173px;
+    top: 712px;
+}
+
+.plus{
+    border-radius: 15px;
+    border: 1px solid #3E82E8;
+    background-color:#3E82E8;
+    color: white;
+    padding: 10px;
+    width: 213px;
+    height: 49px;
+    top: 1103px;
+    margin-left: 914px;
+}
+
+.form {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-bottom: 150PX;
+}
+
+/* On réduit les images 1 et 3 */
+.form1 img,
+.form3 img {
+    width: 18em;
+}
+
+.form2 img {
+    width: 25em;
+}
+
+/* Placement + effets */
+.form1 {
+    transform: translateX(100px);
+    z-index: 0;
+}
+.form3 {
+    transform: translateX(-100px);
+    z-index: 0;
+}
+.form2 {
+    z-index: 1;
+}
+
+/* Style du texte sous chaque image */
+.form-card {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.form-card h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.form-card p {
+    margin-top: 3px;
+    font-size: 0.9em;
+    color: #666;
+}
+#formateurs {
+    margin-top: -150px; /* ajuste la valeur */
+}
+ /* Footer repositionné normalement (plus fixe) */
+footer {
+  background-color: #338DF1;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  width: 1500px;
+  top: 100px;
+}
+
+/* Logo */
+footer .logoBourse img {
+  width: 130px;
+  height: auto;
+  filter: brightness(0) invert(1);
+}
+
+/* Boutons d’icônes */
+.copy-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0 8px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.copy-btn img { 
+  width: 32px;
+  height: 32px;
+  display: block;
+  filter: brightness(0) invert(1);
+}
+
+/* Toast */
+.toast {
+  position: fixed;
+  right: 20px;
+  bottom: 70px;
+  background: #222;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0,0,0,.2);
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity .18s ease, transform .18s ease;
+  pointer-events: none;
+  font-size: 14px;
+  z-index: 9999;
+}
+
+.toast.show { 
+  opacity: 1; 
+  transform: translateY(0); 
+  pointer-events: auto; 
+}
+
+/* Accessibilité */
+.sr-only {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px,1px,1px,1px);
+  white-space: nowrap;
+}
+
+  </style>
+</head>
+
+<body>
+  <header class="entete">
+    <div class="logo">
+      <img src="logo.png" alt="Logo de Club Tech" />
+    </div>
+    <div class="menu">
+      <a href="#SER" class="services">Services</a>
+      <a href="#pro" class="programme">Programmes</a>
+      <a href="#formateurs" class="formateurs">Formateurs</a>
+      <a href="#technologies" class="technologies">Technologies</a>
+      <a href="#contact" class="contact">Contacts</a>
+    </div>
+  </header > 
+ <section class = "services-banner" >
+            <div class = "bc">
+                <div class = "banner-text-content" ><BR></BR>
+                    <h1 class = "banner-text-title"> Ce que nous offrons</h1>
+                    <h2 class = "banner-text-subtitle">  Des Bourses pour devenir Technicien(e). Réalisez votre vision dans le numérique.</h2>
+                    <p class = "banner-text-description">
+Nous accompagnons plus de 200 boursiers en 3 ans vers des carrières florissantes dans la tech. Grâce à notre programme , nos mentors et notre réseau professionnel, nous vous aidons à atteindre vos objectifs. Nous adaptons chaque parcours selon vos besoins et votre budget.                    </p>
+                    <a href = "#" class = "banner-button"> Postuler à la bourse </a>
+                    <a href = "#pro" class = "prog"> Les Programmes <img src="services-section/arrow-down.png" class="arrow"> </a>
+                </div> 
+                
+                        <img src="service-banner-illustration.png" alt = "Banner de Club Tech" class="persona" id="SER"/>
+                        <img src = "service-banner-background-decoration.png" alt = "Background de Club Tech" class="back"/>
+                  </Div>
+                        
+          
+        </section> 
+            <div class = "banner-footer-text-contents" id="pro" >
+                        <p class = "banner-footer-text-content"> Développement web <br/> & mobile </p>
+                        <p class = "banner-footer-text-content"> Audit et accompagnement <br/> technique </p>
+                        <p class = "banner-footer-text-content"> Contrôle qualité manuel et <br/> automatisé </p>
+            </div>
+            <hr >
+        <section  class="s2" >
+            <h2 class ="banner-text-title" >PROGRAMMES</h2>
+            <h1>Ce que vous apprendrez</h1>
+                <div class="pg2">
+                    <div class="i1">
+                        <h1 class="nb">01</h1>
+                        <img src="img_1.png" alt="Programme 1" class="ig1" >
+                        <div class="ul1">
+                            <ul>
+                                <h2>
+                                    Développement web et mobile
+                                </h2>
+                                    <li>Créez des sites, boutiques et applications performantes</li>
+                                    <li>Maîtrisez des modules, APIs et services tiers</li>
+                                    <li>Apprenez avec des solutions sur mesure: Symfony, React, Spring, etc.</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <div class="i2" ><h1 class="nb">02</h1>
+                        <img src="img_2.png" alt="Programme 2" class="ig2">
+                        <ul>
+                            <h2>
+                                Support technique & devops
+                            </h2>
+                                <li>Analysez et améliorez les performances des projets existants</li>
+                                <li>Initiez-vous aux workflows CI/CD et Agile</li>
+                                <li>Renforcez vos compétences en UX/UI</li>
+                        </ul>
+                    </div>
+                    <div class="i3">
+                        <h1 class="nb">03  </h1>
+                        <img src="img_3.png" alt="Programme 3" class="ig3">
+                        <ul>
+                            <h2>
+                                Contrôle qualité
+                            </h2>
+                            <li>Découvrez les tests manuels et automatisés</li>
+                            <li>Elaborez des protocoles de test fiables</li>
+                            <li>Assurez-vous de la qualité UX des projets.</li>
+                        </ul>
+                    </div>
+                </div >
+        <a href="ez.html" class="plus" >Voir d'avantage >></a > 
+        </section>
+       <section id="formateurs"      >
+    <div class="form"  >
+
+        <div class="form-card form1">
+            <img src="image(1).png" alt="formateur" >
+         
+            <h3><STrong>ADAMOU Nadia</STrong>    <p>Directrice Tech</p></h3>
+        </div>
+
+        <div class="form-card form2" >
+            <img src="image(1).png" alt="formateur">
+            <h3><STRong>AHLONKO</STRong> Pinto Toyi <p>Directeur Général</p></h3>
+            
+        </div>
+
+        <div class="form-card form3">
+            <img src="image(1).png" alt="formateur">
+            <h3><STRong>BANKA Samuel</STRong>     <p>Coach Sportive</p></h3>
+        
+        </div >
+
+    </div>
+</section  >
+<SEction class="technologie" id="technologies">
+    <div class="footer-top">
+     <div class="item" >
+       <img src="Arduino.png">
+       <img src="Intelligence.png">
+       <img src="Programmation.png">
+     </div>
+    </div>
+</SEction >
+<footer  id="contact">
+  <div class="logoBourse" >
+    <img src="logo.png" alt="Logo de Club Tech" />
+  </div>
+
+  <button class="copy-btn" type="button" data-copy="https://linkedin.com/tech" aria-label="Copier LinkedIn">
+    <img src="Linkedin.png" alt="LinkedIn">
+  </button>
+
+  <button class="copy-btn" type="button" data-copy="+22893442200" aria-label="Copier téléphone">
+    <img src="Telephone.png" alt="Téléphone">
+  </button>
+
+  <button class="copy-btn" type="button" data-copy="tech@gmail.com" aria-label="Copier email">
+    <img src="At sign.png" alt="Email">
+  </button>
+
+  <button class="copy-btn" type="button" data-copy="@techacademy.tg" aria-label="Copier Instagram">
+    <img src="Instagram.png" alt="Instagram">
+  </button>
+</footer>
+
+<!-- Toast -->
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<div id="a11y" class="sr-only" aria-live="polite"></div>
+<SCript>
+const buttons = document.querySelectorAll('.copy-btn');
+const toast = document.getElementById('toast');
+const a11y = document.getElementById('a11y');
+
+async function copyToClipboard(text) {
+  try {
+    await navigator.clipboard.writeText(text);
+    return true;
+  } catch (err) {
+    try {
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.left = '-9999px';
+      document.body.appendChild(ta);
+      ta.select();
+      const ok = document.execCommand('copy');
+      document.body.removeChild(ta);
+      return ok;
+    } catch (e) {
+      return false;
+    }
+  }
+}
+
+function showToast(message, duration = 2000) {
+  toast.textContent = message;
+  a11y.textContent = message;
+  toast.classList.add('show');
+  clearTimeout(showToast._t);
+  showToast._t = setTimeout(() => {
+    toast.classList.remove('show');
+    a11y.textContent = '';
+  }, duration);
+}
+
+buttons.forEach(btn => {
+  btn.addEventListener('click', async () => {
+    const value = btn.getAttribute('data-copy');
+    const ok = await copyToClipboard(value);
+    if(ok) showToast('Copié : ' + value);
+    else showToast('Échec — copiez manuellement.');
+  });
+});
+</SCript>
+</body>
+</html>
+
+  
